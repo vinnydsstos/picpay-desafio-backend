@@ -37,7 +37,6 @@ _Corpo do Email com o link do repositório do desafio_
   essas facilidades aumentam a produtividade no dia-a-dia mas aqui queremos ver o **seu** código e a sua forma de
   resolver problemas;
 
-> Valorizamos uma boa estrutura de containeres criada por você.
 
 ## Para o dia da entrevista técnica
 
@@ -65,19 +64,8 @@ A seguir estão algumas regras de negócio que são importantes para o funcionam
 
 - Validar se o usuário tem saldo antes da transferência;
 
-- Antes de finalizar a transferência, deve-se consultar um serviço autorizador externo, use este mock
-  [https://util.devi.tools/api/v2/authorize](https://util.devi.tools/api/v2/authorize) para simular o serviço
-  utilizando o verbo `GET`;
-
 - A operação de transferência deve ser uma transação (ou seja, revertida em qualquer caso de inconsistência) e o
   dinheiro deve voltar para a carteira do usuário que envia;
-
-- No recebimento de pagamento, o usuário ou lojista precisa receber notificação (envio de email, sms) enviada por um
-  serviço de terceiro e eventualmente este serviço pode estar indisponível/instável. Use este mock
-  [https://util.devi.tools/api/v1/notify)](https://util.devi.tools/api/v1/notify)) para simular o envio da notificação
-  utilizando o verbo `POST`;
-
-- Este serviço deve ser RESTFul.
 
 > Tente ser o mais aderente possível ao que foi pedido, mas não se preocupe se não conseguir atender a todos os
 > requisitos. Durante a entrevista vamos conversar sobre o que você conseguiu fazer e o que não conseguiu.
@@ -127,25 +115,8 @@ Conhecimentos intermediários de construção de projetos manuteníveis:
 
 Aptidões para criar e manter aplicações de alta qualidade:
 - Aplicação de conhecimentos de observabilidade
-- Utlização de CI para rodar testes e análises estáticas
 - Conhecimentos sobre bancos de dados não-relacionais
-- Aplicação de arquiteturas (CQRS, Event-sourcing, Microsserviços, Monolito modular)
-- Uso e implementação de mensageria
-- Noções de escalabilidade
 - Boas habilidades na aplicação do conhecimento do negócio no software
-- Implementação margeada por ferramentas de qualidade (análise estática, PHPMD, PHPStan, PHP-CS-Fixer etc)
-- Noções de PHP assíncrono
-
-### Boas práticas
-
-Caso use PHP tente seguir as [PSRs](https://www.php-fig.org/psr/psr-12/), caso use outro framework ou linguagem, tente
-seguir as boas práticas da comunidade.
-
-Uma sugestão para revisar a qualidade do seu código é usar ferramentas como o PHPMD antes de submeter o seu teste.
-O comando a seguir pode ser usado para rodar o PHPMD no seu projeto localmente, por exemplo:
-```bash
-docker run -it --rm -v $(pwd):/project -w /project jakzal/phpqa phpmd app text cleancode,codesize,controversial,design,naming,unusedcode
-```
 
 ## O que NÃO será avaliado :warning:
 
@@ -171,13 +142,4 @@ docker run -it --rm -v $(pwd):/project -w /project jakzal/phpqa phpmd app text c
 
 ## Materiais úteis
 
-- https://picpay.com/site/sobre-nos
-- https://hub.packtpub.com/why-we-need-design-patterns/
-- https://refactoring.guru/
-- http://br.phptherightway.com/
-- https://www.php-fig.org/psr/psr-12/
-- https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing
-- https://github.com/exakat/php-static-analysis-tools
-- https://martinfowler.com/articles/microservices.html
-- https://docs.guzzlephp.org/en/stable/request-options.html
-- https://www.devmedia.com.br/rest-tutorial/28912
+Seu cérebro, Deus, colega do lado, github, etc.

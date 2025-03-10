@@ -142,4 +142,4 @@ Aptidões para criar e manter aplicações de alta qualidade:
 
 ## Materiais úteis
 
-Seu cérebro, Deus, colega do lado, github, etc.
+Seu cérebro, Deus (se você não for ateu), colega do lado, github, etc.
